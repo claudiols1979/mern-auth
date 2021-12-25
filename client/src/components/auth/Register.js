@@ -53,10 +53,10 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="container">
+      <div className="container register">
         <div className="row">
           <div className="col s8 offset-s2">
-            <Link to="/" className="btn-flat waves-effect">
+            <Link to="/" className="btn-flat">
               <i className="material-icons left">keyboard_backspace</i> Back to
               home
             </Link>
@@ -69,7 +69,7 @@ class Register extends Component {
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
-              <div className="input-field col s12">
+              <div className="col s12">
                 <input
                   onChange={this.onChange}
                   value={this.state.name}
@@ -83,7 +83,7 @@ class Register extends Component {
                 <label htmlFor="name">Name</label>
                 <span className="red-text">{errors.name}</span>
               </div>
-              <div className="input-field col s12">
+              <div className="col s12">
                 <input
                   onChange={this.onChange}
                   value={this.state.email}
@@ -97,7 +97,7 @@ class Register extends Component {
                 <label htmlFor="email">Email</label>
                 <span className="red-text">{errors.email}</span>
               </div>
-              <div className="input-field col s12">
+              <div className="col s12">
                 <input
                   onChange={this.onChange}
                   value={this.state.password}
@@ -111,7 +111,7 @@ class Register extends Component {
                 <label htmlFor="password">Password</label>
                 <span className="red-text">{errors.password}</span>
               </div>
-              <div className="input-field col s12">
+              <div className="col s12">
                 <input
                   onChange={this.onChange}
                   value={this.state.password2}
@@ -134,7 +134,7 @@ class Register extends Component {
                     marginTop: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  className="btn btn-large hoverable blue accent-3"
                 >
                   Sign up
                 </button>

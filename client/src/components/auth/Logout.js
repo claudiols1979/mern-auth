@@ -15,7 +15,7 @@ class Logout extends Component {
     // console.log(user)
 
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div style={{ height: "75vh" }} className="container valign-wrapper logout">
         <div className="row">
           <div className="landing-copy col s12 center-align">
             <h4>
@@ -36,7 +36,7 @@ class Logout extends Component {
                 marginTop: "1rem"
               }}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btn btn-large hoverable blue accent-3"
             >
               Logout
             </button>

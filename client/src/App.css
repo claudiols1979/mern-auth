@@ -7,11 +7,18 @@
   font-family: 'Lato', sans-serif;
 }
 
-.home, .reports, .products, .team, .messages, .support {
+.home, .reports, .products, .team, .messages, .support  {
   display: flex;
   height: 90vh;
   align-items: center;
   font-size: 3rem;
   justify-content: center;
 
+}
+
+.login, .logout, .register {
+  display: flex;
+  height: 90vh;
+  align-items: center;  
+  justify-content: center;
 }
