@@ -13,6 +13,13 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import Home from './pages/Home';
+import Messages from './pages/Messages';
+import Products from './pages/Products';
+import Reports from './pages/Reports';
+import Support from './pages/Support';
+import Team from './pages/Team';
+import Logout from './components/auth/Logout';
 
 import "./App.css";
 
@@ -47,6 +54,13 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/home"  component={Home} />
+              <PrivateRoute exact path="/products" component={Products} />
+              <PrivateRoute exact path="/reports" component={Reports} />
+              <PrivateRoute exact path="/messages" component={Messages} />
+              <PrivateRoute exact path="/team" component={Team} />
+              <PrivateRoute exact path="/support" component={Support} />
+              <PrivateRoute exact path="/logout" component={Logout} />
             </Switch>
           </div>
         </Router>
